@@ -10,26 +10,47 @@
     <header class="eheader"> 
       
     <nav class="nav"> 
+      <!-- <span class="ham-b">  -->
+       <img src="assets/hamburger-menu.png" alt="hamburger " class="ham">
+      <!-- </span> -->
          <img src="assets/logo.svg" alt="logo" class="img-logo" >
-      <span class="nnn">  Collections </span> <span class="nnn" > Men</span> <span class="nnn"> Women</span>  <span class="nnn"> About</span> <span class="nnn">Contact</span> 
+        <div class="mnav" > 
+        <!-- <img src="assets/cansel.png" alt="" class="cansel">  -->
+      <span class="nnn">  Collections </span> <span class="nnn" > Men</span> <span class="nnn"> Women</span>  
+      <span class="nnn"> About</span> <span class="nnn">Contact</span> 
+    </div>
 
-        
-       
+   
+       <div class="mnav1" > 
+       <img src="assets/cansel.png" alt="x" class="cansel"> 
+     <span class="nnn">  Collections </span> <span class="nnn" > Men</span> <span class="nnn"> Women</span>  
+     <span class="nnn"> About</span> <span class="nnn">Contact</span> 
+   </div>
 
     </nav>
+    
     <div class="sly"> 
-    <img src="assets/icon-cart.svg" alt="cart" class="cart" >
+   
+    <div class="cart-container">
+      <img src="assets/icon-cart.svg" alt="cart" class="cart">
+      <span class="cart-badge">0</span>
+  </div>
    <button class="carr">  <img src="assets/image-avatar.png" alt="avatar" class="ava"></button>
-   <dialog  open class="mcar">
+   <dialog  class="mcar">
+    <div class="brb">
        <span class="crtt"><b>Cart </b>  </span>
        <hr class="cr-lne">
+       <div class="vani"> 
        <div class="s-space"> 
                <img src="assets/image-product-1.jpg" alt="img" class="mp1"> 
-               <span class="mp11">Fall limited sneakers $124.00 3 <b class="cct">$375.00</b> </span>
+
+               <span class="mp11">Fall Limited Edition Sneakers <br/><span class="np1">  $124.00 × 3 <span class="np2"> $375.00 </span> </span>
+              </span> <img src="assets/icon-delete.svg" alt="img" class="cr-del">
        </div>
 
      <button class="s-btn"> <b> Checkout</b> </button>
-
+    </div>
+    </div>
 
    </dialog>
 </div>
@@ -40,14 +61,21 @@
     <div class="bd">
 
   <div class="ls"> 
-   <img src="assets/image-product-1.jpg" alt="product" class="p-img">
-  <span class="ls-1">  <img src="assets/image-product-1-thumbnail.jpg" alt="product1" class="q-img"  id="q-img1"> 
+   
+   <img src="assets/image-product-1.jpg" alt="product" class="p-img" id="mopo-img">
+   <div class="zz-btn">
+   <button class="ba-btn" id="bpre"><img src="assets/icon-previous.svg" alt="" class="baz-btn"> </button> 
+
+   <button class="ba-btn" id="bnet"> <img src="assets/icon-next.svg" alt="" class="baz-btn" ></button>  
+  </div>
+
+  <span class="ls-1">  <img src="assets/image-product-1-thumbnail.jpg" alt="product1" class="q-img "  id="img1"> 
     <img src="assets/image-product-2-thumbnail.jpg" alt="product2"class="q-img" id="q-img2" >
     <img src="assets/image-product-3-thumbnail.jpg" alt="product3" class="q-img"id="q-img3" >
     <img src="assets/image-product-4-thumbnail.jpg" alt="product4" class="q-img" id="q-img4"></span>
 </div>
 <div class="rs"> 
-    <span class="sc"> Sneaker Company</span> 
+    <span class="sc">  SNEAKER COMPANY</span> 
      <h1 class="gt">Fall Limited Edition Sneakers</h1> 
      <span class="sc">These low-profile sneakers are your perfect casual wear companion.
         Featuring a durable rubber outer sole,
@@ -58,7 +86,7 @@
   <div class="ddf"> 
      <span class="quantity">
         <button class="z1-btn" type="button" id="z-btn" >-</button>
-        <input type="text" id="quad" value="0">
+        <input type="text" id="quad" value="0" class="bquad">
         <button class="z2-btn" type="button" id="z-btn">+</button>
      </span>
       <button class="y-btn"> <img src="assets/icon-cart2.svg" alt="cart"> Add to cart</button>
@@ -67,20 +95,25 @@
     </div>
 
     </div>
+
+    <!-- dialog carosel -->
+
     <dialog  class="ks"> 
         <span class="cl"> <img src="assets/icon-close.svg" alt="close"></span>
        
         <img src="assets/image-product-1.jpg" alt="product" class="p-img" id="w-img">
+       
         <span class="bx"> 
             <button class="a-btn" id="pre"><img src="assets/icon-previous.svg" alt="" class="az-btn"> </button> 
 
         <button class="a-btn" id="net"> <img src="assets/icon-next.svg" alt="" class="az-btn" ></button> 
      </span>
  
-       <span class="ls-1">  <img src="assets/image-product-1-thumbnail.jpg" alt="product1" class="q-img"  id="w-imgx1"> 
-         <img src="assets/image-product-2-thumbnail.jpg" alt="product2"class="q-img" id="w-imgx2" >
-         <img src="assets/image-product-3-thumbnail.jpg" alt="product3" class="q-img"id="w-imgx3" >
-         <img src="assets/image-product-4-thumbnail.jpg" alt="product4" class="q-img" id="w-imgx4"></span>
+       <span class="ls-1" id="la-l">
+          <img src="assets/image-product-1-thumbnail.jpg" alt="product1" class="v-img"  id="w-imgx1"> 
+         <img src="assets/image-product-2-thumbnail.jpg" alt="product2"class="v-img" id="w-imgx2" >
+         <img src="assets/image-product-3-thumbnail.jpg" alt="product3" class="v-img"id="w-imgx3" >
+         <img src="assets/image-product-4-thumbnail.jpg" alt="product4" class="v-img" id="w-imgx4"></span>
      </dialog>
     
 
